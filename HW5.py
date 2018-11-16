@@ -6,11 +6,10 @@ Created on Mon Nov 12 20:06:27 2018
 """
 
 import pandas as pd
-import numpy as np
 from statsmodels.tsa.api import VAR
 from statsmodels.tsa.vector_ar import irf
-import matplotlib.pyplot as plt
 
+#data불러오기
 gdp = pd.read_table("gdp.txt",index_col = False)
 print(gdp.head())
 
